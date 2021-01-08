@@ -1,0 +1,55 @@
+---
+title: "The New and Improved Iris Selector 2021"
+author: "P.Y.Fong"
+date: "`r format(Sys.Date(),'%d %B %Y')`"
+output:
+  ioslides_presentation:
+    transition: slower
+    logo: Lairis.jpg
+    theme: cerulean
+---
+
+```{r setup, include=FALSE}
+library (knitr)
+opts_chunk$set(cache.lazy= T,
+               echo = T,
+               message=F,
+               warning=F,
+               comment="")
+```
+
+##      2.0 What is the Iris Selector?
+###     The Iris Selector 2021 ;  
+
+  - is a knowledge tool for discerning botanists.
+  - provides fine distinctions between various species of Irises.
+  - allows the user to view the essential measurements of the various Iris species available.
+  - uses the highly accurate and recognized Iris data set containing 150 varieties of Irises.
+  - was built based on cutting edge data science algorithms and tools.
+
+##      3.0 Data Set Structure
+The iris data set in all its "glory".
+```{r data}
+data <- iris
+data <- data[,c(5,3:4,1:2)]
+knitr::kable(head(data), 'html')
+```
+
+##      4.0 Variables Relationships
+An overview of the variables and their relationships.
+```{r plot}
+plot(iris)
+```
+
+##      5.0 Availabilty  {data-background=northern-blue-iris.png data-background-size=400px data-background-position=right}
+
+Click the link below to for your free access today!  
+  
+[Iris Selector 2021](https://pyfong.shinyapps.io/IrisSelector/)  
+  
+<div class="green">Hurry!  
+Free for a limited timeonly.</div>  
+
+
+
+Code available at [GitHub](http://github.com/pyfong1579/Coursera-Data-Science-Specialization_Course-8_Week-4-Project_Shiny-Application-Reproducible-Pitch.)  
